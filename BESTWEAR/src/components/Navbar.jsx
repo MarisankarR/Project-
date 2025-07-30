@@ -17,8 +17,8 @@ const Navbar = () => {
   }
 
   return (
-     <div className='flex items-center justify-between py-5 px-6 font-medium'>
-      <NavLink to="/home"> <img src={assets.logo1} className='w-36 hover:scale-110 transition ease-in' alt="logo" /></NavLink>
+     <div className='flex items-center justify-between py-5 px-6 font-medium shadow-2xl shadow-slate-300'>
+      <NavLink to="/home"> <img src={assets.logo1} className='w-38  hover:scale-110 transition ease-in' alt="logo" /></NavLink>
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
 
          <NavLink to="/home" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-yellow-200 hover:background rounded-lg hover:scale-110  ease-out ' activeclassname="text-black">
