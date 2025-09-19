@@ -1,13 +1,13 @@
 import React from 'react'
-import Title from '../Components/Title'
+import Title from '../components/Title'
 import assets from '../assets/assets'
-import NewsletterBox from '../Components/NewsletterBox'
+import NewsletterBox from '../components/NewsletterBox'
 
 const About = () => {
   return (
-    <div>
+    <div className='shadow-2xl shadow-purple-600 px-5 pb-10 rounded-xl'>
       
-      <div className='text-2xl text-center pt-8 border-t'>
+      <div className='text-2xl text-center pt-8 border-t '>
         <Title text1={'ABOUT'} text2={'US'}/>
       </div>
       <div className='my-10 flex flex-col md:flex-row gap-16'>
@@ -24,15 +24,15 @@ const About = () => {
         <Title text1={'WHY'} text2={'CHOOSE US'}/>
       </div>
       <div className='flex flex-col md:flex-row text-sm mb-20'>
-        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 shadow-2xl rounded-lg shadow-purple-600'>
         <b>Quality Assurance:</b>
         <p>Our product quality and brand is much affortable if buy this once  you want again our service is exceded. implementing process  procedures, and activities to ensure consistent quality</p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 shadow-2xl rounded-lg shadow-purple-600'>
         <b>Convinience:</b>
         <p> User-friendly interface and hassle-free ordering process, shoping has best price. Quality makes something easy or useful for someone by reducing the amount of work or time required to do something.</p>
         </div>
-        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5'>
+        <div className='border px-10 md:px-16 py-8 sm:py-20 flex flex-col gap-5 shadow-2xl rounded-lg shadow-purple-600'>
         <b>Exceptional Customer Service</b>
         <p>customer empathy is an easy way to show that you understand and appreciate their needs and circumstances. </p>
         </div>

@@ -49,11 +49,11 @@ const Orders = ({ token }) => {
   }, [token])
   return (
     <div>
-      <h3>Order Page</h3>
+      <h3 className='text-center font-semibold'>Order Page</h3>
       <div>
         {
         orders.map((order, index) => (
-          <div className='grid grid-cols-2 sm:grid-cols-[0.5fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr_1fr_1fr] gap-3 item-start border-2 border-gray-200 p-5 md:p-8 my-2 md:my-2 text-xs sm:text-sm text-gray-700 ' key={index}>
+          <div className='grid grid-cols-2 sm:grid-cols-[0.5fr_2fr_1fr] lg:grid-cols-[0.5fr_2fr_1fr_1fr_1fr] gap-3 item-start border-2 border-gray-200 p-5 md:p-8 my-2 md:my-2 text-xs sm:text-sm text-gray-700 rounded-xl shadow-2xl shadow-purple-600 ' key={index}>
             <img className='w-12' src={assets.parcel_icon} alt="" />
             <div>
               <div>

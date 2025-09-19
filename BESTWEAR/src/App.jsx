@@ -10,11 +10,12 @@ import PlaceOrder from './Pages/PlaceOrder'
 import Product from './Pages/Product'
 import Navbar from './components/Navbar'
 import Footer from './components/Footer'
-import SearchBar from './Components/SearchBar'
+import SearchBar from './components/SearchBar'
 import {ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import About from './Pages/About'
 import Verify from './Pages/Verify'
+
 
 
 const App = () => {
@@ -36,6 +37,7 @@ const App = () => {
       <Route path='/product/:productId' element={<Product/>}/>
       <Route path='/about' element={<About/>}/>
       <Route path='/verify' element={<Verify/>}/>
+    
     </Routes>
     <Footer/>
     </div>

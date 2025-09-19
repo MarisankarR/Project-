@@ -41,7 +41,7 @@ const Orders = () => {
   },[token])
 
   return (
-    <div className='border-t pt-16 border border-gray-600 rounded-md px-5 py-5'>
+    <div className='border-t pt-16  rounded-md px-5 py-5 shadow-2xl shadow-purple-600 bg-blue-300'>
 
       <div className='text-2xl'>
         <Title text1={'MY'} text2={'ORDERS'}/>
@@ -50,8 +50,8 @@ const Orders = () => {
       <div>
        {
         orderData.map((item,index)=>(
-        <div key={index} className='py-r border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-4 pb-3 pt-3'>
-          <div className='flex items-start gap-6 text-sm'>
+        <div key={index} className='py-r border-t border-b text-gray-700 flex flex-col md:flex-row md:items-center md:justify-between gap-2 pb-3 pt-3 shadow-2xl shadow-purple-600 px-5 rounded-2xl bg-white '>
+          <div className='flex items-start gap-6 text-sm '>
             <img className='w-16 sm:w-20' src={item.image[0]} alt=""/>
             <div>
             <p className='sm:text-base font-medium '>{item.name}</p>

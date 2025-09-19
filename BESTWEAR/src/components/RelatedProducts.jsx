@@ -22,7 +22,7 @@ const RelatedProducts = ({category,subCategory}) => {
         }
     },[products])
   return  (
-    <div className='my-24'>
+    <div className='my-24 shadow-2xl shadow-purple-600 px-5 rounded-xl bg-blue-300'>
         <div className='text-center text-3xl py-2 '>
            <Title text1={'RELATED'} text2={'PRODUCTS'}/>
         </div>

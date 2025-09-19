@@ -2,7 +2,7 @@ import React, { useContext, useEffect, useState } from 'react'
 import { ShopContext } from '../Context/ShopContext'
 import Title from '../components/Title';
 import { assets } from '../assets/assets';
-import CartTotal from '../Components/CartTotal';
+import CartTotal from '../components/CartTotal';
 
 const Cart = () => {
 
@@ -37,7 +37,7 @@ const Cart = () => {
       <div className='text-2xl mb-3'>
         <Title text1={'YOUR'} text2={'CART'} />
       </div>
-      <div>
+      <div className='shadow-2xl shadow-purple-500 px-5 rounded-xl'>
         {
           cartData.map((item, index) => {
 

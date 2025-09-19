@@ -17,28 +17,31 @@ const Navbar = () => {
   }
 
   return (
-     <div className='flex items-center justify-between py-5 px-6 font-medium shadow-2xl shadow-slate-300'>
-      <NavLink to="/home"> <img src={assets.logo1} className='w-38  hover:scale-110 transition ease-in' alt="logo" /></NavLink>
+     <div className='flex items-center justify-between py-5 px-6 font-medium shadow-2xl shadow-purple-600 rounded-xl bg-blue-200'>
+      <NavLink to="/home"> <img src={assets.logo1} className='w-38  hover:scale-110 transition ease-in rounded-lg' alt="logo" /></NavLink>
       <ul className='hidden sm:flex gap-5 text-sm text-gray-700'>
 
-         <NavLink to="/home" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-yellow-200 hover:background rounded-lg hover:scale-110  ease-out ' activeclassname="text-black">
+         <NavLink to="/home" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-red-400 hover:background rounded-lg hover:scale-110  ease-out ' activeclassname="text-black">
             <p>HOME</p>
            <hr className='w-2 border-none h-[1.5px] bg-gray-700 hidden'/>
          </NavLink>
-         <NavLink to="/collection" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-yellow-200 hover:background rounded-lg hover:scale-110  ease-out ' activeclassname="text-black">
+         <NavLink to="/collection" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-red-400 hover:background rounded-lg hover:scale-110  ease-out ' activeclassname="text-black">
             <p>COLLECTION</p>
            <hr className='w-2 border-none h-[1.5px] bg-gray-700 hidden'/>
          </NavLink>
-         <NavLink to="/about" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-yellow-200 hover:background rounded-lg hover:scale-110  ease-out ' activeclasssname="text-black">
+         <NavLink to="/about" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-red-400 hover:background rounded-lg hover:scale-110  ease-out ' activeclasssname="text-black">
             <p>ABOUT</p>
            <hr className='w-2 border-none h-[1.5px] bg-gray-700 hidden'/>
          </NavLink>
-         <NavLink to="/contact" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-yellow-200 hover:background rounded-lg hover:scale-110  ease-out ' activeclassname="text-black">
+         <NavLink to="/contact" className='flex flex-col items-center gap-1 px-2 py-2 transition-all duration-300  hover:bg-red-400 hover:background rounded-lg hover:scale-110  ease-out ' activeclassname="text-black">
             <p>CONTACT</p>
            <hr className='w-2 border-none h-[1.5px] bg-gray-700 hidden'/>
          </NavLink>
     
       </ul>
+      <div>
+        <a href='http://localhost:5174/'><button className='rounded-lg hover:bg-blue-600 bg-black text-white px-5 py-3'> Admin Panel</button></a>
+      </div>
       <div className='flex items-center gap-6'> 
       <img onClick={()=>setShowSearch(true)} src={assets.search_icon} className='w-5 cursor-pointer hover:scale-110 transition ease-in' alt=""/>
 

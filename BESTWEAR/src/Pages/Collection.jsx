@@ -1,8 +1,8 @@
 import React, { useContext, useEffect, useState } from 'react';
 import { ShopContext } from '../Context/ShopContext';
 import { assets } from '../assets/assets';
-import Title from '../Components/Title';
-import ProductItem from '../Components/ProductItem';
+import Title from '../components/Title';
+import ProductItem from '../components/ProductItem';
 
 const Collection = () => {
   const { products, search, showSearch } = useContext(ShopContext);
@@ -74,7 +74,7 @@ else{
    sortProduct();
   },[sortType])
   return (
-    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t'>
+    <div className='flex flex-col sm:flex-row gap-1 sm:gap-10 pt-10 border-t shadow-2xl shadow-purple-800 bg-blue-200 px-5'>
 
       {/* Filters Section */}
       <div className='min-w-60'>
@@ -82,7 +82,7 @@ else{
         {/* Mobile Filter Toggle Button */}
         <p
           onClick={() => setShowFilter(!showFilter)}
-          className='my-2 text-xl flex items-center cursor-pointer gap-2 '>
+          className='my-2 text-xl flex items-center cursor-pointer gap-2 px-5'>
           FILTERS
           <img
             className={`h-3 transition-transform duration-300 ${showFilter ? 'rotate-90' : ''}`}
@@ -93,7 +93,7 @@ else{
 
         {/* Category Filter */}
       
-        <div className={`${showFilter ? 'block' : 'hidden'} sm:block border border-gray-300 pl-5 py-3 mt-6`}>
+        <div className={`${showFilter ? 'block' : 'hidden'} sm:block border border-gray-300 pl-5 py-3 mt-6 ml-5 shadow-2xl shadow-purple-600 bg-yellow-200`}>
           <p className='mb-3 text-sm font-medium'>CATEGORIES</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <label className='flex gap-2 cursor-pointer'>
@@ -109,7 +109,7 @@ else{
         </div>
 
         {/* SubCategory Filter */}
-        <div className={`${showFilter ? 'block' : 'hidden'} sm:block border border-gray-300 pl-5 py-3 my-5`}>
+        <div className={`${showFilter ? 'block' : 'hidden'} sm:block border border-gray-300 pl-10 py-3 my-5 ml-5 shadow-2xl shadow-purple-600 bg-yellow-200 `}>
           <p className='mb-3 text-sm font-medium'>TYPE</p>
           <div className='flex flex-col gap-2 text-sm font-light text-gray-700'>
             <label className='flex gap-2 cursor-pointer'>
@@ -125,7 +125,7 @@ else{
           
         </div>
               {/*Product Sort */}
-          <select onChange={(e)=>setSortType(e.target.value)} className='border border-gray-300 text-sm px-2'>
+          <select onChange={(e)=>setSortType(e.target.value)} className='border border-gray-300 text-sm px-2 ml-5 shadow-2xl shadow-purple-600 bg-yellow-200'>
             <option value="relevent">Sort by:Relevent</option>
             <option value="low-high">Sort by: Low to High</option>
             <option value="high-low">Sort by: High to Low</option>

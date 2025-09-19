@@ -127,7 +127,7 @@ const PlaceOrder = () => {
 
       {/* Show saved info */}
       {isSaved && (
-        <div className='mb-6'>
+        <div className='mb-6 shadow-2xl  shadow-purple-600'>
           <div className='text-xl sm:text-2xl font-bold mb-2'>YOUR INFORMATION</div>
           <div className='border border-gray-300 rounded p-4 bg-gray-50 text-sm space-y-2'>
             <div><strong>Name:</strong> {formData.firstName} {formData.lastName}</div>
@@ -143,8 +143,8 @@ const PlaceOrder = () => {
       )}
 
       {/* Show form only if not saved */}
-      {!isSaved && (
-        <div className='flex flex-col gap-4'>
+      {!isSaved && ( 
+        <div className='flex flex-col gap-4 shadow-2xl shadow-purple-600 px-5 py-5 rounded-xl'>
           <div className='text-xl sm:text-2xl my-3'>
             <Title text1='DELIVERY' text2='INFORMATION' />
           </div>
@@ -182,7 +182,7 @@ const PlaceOrder = () => {
         <div className='mt-8 min-w-80'>
           <CartTotal />
         </div>
-        <div className='mt-12  py-5 px-5 rounded-md'>
+        <div className='mt-12  py-5 px-5 rounded-lg shadow-2xl shadow-purple-600' >
           <Title text1={'PAYMENT'} text2={'METHOD'} />
           {/*----------------Payment Method Selection ------------------ */}
           <div className='flex gap-4 flex-col lg:flex-row '>

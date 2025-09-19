@@ -29,7 +29,7 @@ const Product = () => {
  
   
   return productData ? (
-    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100'>
+    <div className='border-t-2 pt-10 transition-opacity ease-in duration-500 opacity-100 shadow-2xl shadow-purple-600 px-5 rounded-xl pb-3'>
 {/*----------------Product Data---------------- */}
 <div className='flex gap-12 sm:gap-12 flex-col sm:flex-row'>
 
@@ -79,11 +79,11 @@ const Product = () => {
 </div>
 {/*------------Description & Review Section ------------- */}
 <div className='mt-20'>
-  <div className='flex'>
+  <div className='flex shadow-2xl shadow-purple-300'>
     <b className='border px-5 py-3 text-sm'>Description</b>
     <p className='border px-5 py-3 text-sm'>Reviews (122)</p>
   </div>
-   <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-grayk-500'>
+   <div className='flex flex-col gap-4 border px-6 py-6 text-sm text-grayk-500 shadow-2xl shadow-purple-300'>
 <p>This is our visiting area for customers review and their discription whitle the product quality and their populority</p>
  <p>E-commerce website basically display our products and service belong with detailed</p>
  </div>

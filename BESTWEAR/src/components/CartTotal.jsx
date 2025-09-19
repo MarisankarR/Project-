@@ -9,13 +9,13 @@ const CartTotal =  () => {
 
     
   return (
-    <div className='w-full'>
+    <div className='w-full shadow-2xl shadow-purple-500 px-5 py-5 rounded-xl'>
         <div className='text-2xl'>
             <Title  text1={'CART'} text2={'TOTALS'}/>
         </div>
 
       <div className='flex flex-col gap-2 mt-2 text-sm '>
-        <div className='flex justify-between'>
+        <div className='flex justify-between'> 
             <p>Subtotal</p>
             <p>{currency}{getCartAmount()}.00</p>
         </div>
