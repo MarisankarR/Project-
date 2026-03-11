@@ -75,7 +75,7 @@ import add_icon from './add_icon.png'
 import order_icon from './order_icon.png'
 import upload_area from './upload_area.png'
 import parcel_icon from './parcel_icon.svg'
-import logo1 from './logo1.png'
+import logo1 from './logo1.PNG'
 import google_pay from './google_pay.png'
 import hero_img1 from './hero_img1.png'
 

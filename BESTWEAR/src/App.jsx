@@ -15,6 +15,7 @@ import {ToastContainer, toast} from 'react-toastify'
 import 'react-toastify/dist/ReactToastify.css'
 import About from './Pages/About'
 import Verify from './Pages/Verify'
+import { Analytics } from '@vercel/analytics/react'
 
 
 
@@ -40,6 +41,7 @@ const App = () => {
     
     </Routes>
     <Footer/>
+    <Analytics />
     </div>
   )
 }
